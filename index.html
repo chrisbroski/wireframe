@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=Edge">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>Wireframe - Demo</title>
+<link rel="stylesheet" href="wireframe.css">
+<style type="text/css">
+/* Instance-specific styles */
+article {margin: 0 auto; width: 720px; position: relative; }
+
+#image1 {float: right; margin: 0 1em; }
+
+button {height: 2.1em; }
+button img {vertical-align: middle; margin-right: 0.8em; }
+#die1, #die2 {font-size: 24px; font-family: monospace; }
+
+#ajaxRand {width: 10em; }
+#ajaxVote {width: 9em; }
+
+#wireframe {left: -60px; }
+#testSpin {}
+</style>
+
+<body>
+<article>
+<h1>Wireframe* Demo</h1>
+
+<div class="wire">
+<h2>Common Ajax Button Behavior</h2>
+<canvas class="placeholderImage" id="image1" width="200" height="200" title="Image placeholder"></canvas>
+<p>For repeatable ajax functionality, disable the button when clicked and change its text to make what is happening clear to the user. When the activity completes, reset the button to its original state.
+<p><button type="button" id="ajaxRand" onclick="pseudoAjaxRandom()">Roll your dice</button>
+<p>Rolled: <span id="die1">⚀</span><span id="die2">⚀</span>
+
+<h3>Non-repeatable Actions</h3>
+<p>If it is a one-time only action, leave the button disabled and update the text to communicate a completed state.
+
+<p><button type="button" id="ajaxVote" onclick="pseudoAjaxVote()">Vote now!</button>
+
+<p><canvas class="spinner" width="20" height="20" id="testSpin"></canvas>
+</div>
+
+</article>
+
+<article id="wireframe">
+<h2>*What are Wireframes?</h2>
+<p>Wireframes are simple designs that focuses on functionality, behavior and priority of content, opposed to color, illustration, and other superfluous decorations.
+
+<h3>Browser Support</h3>
+<p>Wireframes must be created and modified as quickly as possible, so the most powerful features of the latest browsers are used.
+<p>This wireframe was built for the latest versions of <a href="http://www.mozilla.org/en-US/firefox/desktop/">Firefox</a> and <a href="https://www.google.com/intl/en-US/chrome/browser/">Chrome</a> only. No time was spent on compatibility with other browsers.
+
+<h3>More About Wireframing</h3>
+<h4>From <a href="http://www.usability.gov/sites/default/files/creating-wireframes.pdf">Usability.gov</a></h4>
+<blockquote>“A wireframe is a basic visual interface guide that suggests the structure of an 
+interface and the relationships between its pages. They serve as a blue print that 
+defines each Web page’s structure, content and functionality. Wireframes are created 
+before any design work is started so that the focus is on layout without the 
+distraction of color and visual elements.”</blockquote>
+
+<h4>From <a href="http://konigi.com/node/1819">Konigi.com</a></h4>
+<blockquote>“A wireframe is a schematic or other low-fidelity rendering of a computer interface, intended to primarily demonstrate functionality, features, content, and user flow without explicitly specifying the visual design of a product. Wireframes may function as interface specification for products such as computer applications, web and mobile sites, and all products requiring some form of human-computer interaction.”</blockquote>
+
+</article>
+
+<script>
+function makeImage(canvas) {
+    var ctx = canvas.getContext("2d"), centerWidth, centerHeight, maxDim;
+    centerWidth = canvas.width / 2;
+    centerHeight = canvas.height / 2;
+    maxDim = canvas.width;
+    if (canvas.height > maxDim) {
+        maxDim = canvas.height;
+    }
+
+    ctx.beginPath();
+    ctx.rect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'white';
+    ctx.fill();
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'black';
+    ctx.moveTo(0, 0);
+    ctx.lineTo(canvas.width, canvas.height);
+    ctx.moveTo(canvas.width, 0);
+    ctx.lineTo(0, canvas.height);
+
+    ctx.stroke();
+}
+
+function makeAllImagePlaceholders() {
+    var imagePlaceholders = document.querySelectorAll('canvas.placeholderImage'), ii;
+    for (ii = 0; ii < imagePlaceholders.length; ii = ii + 1) {
+        makeImage(imagePlaceholders[ii]);
+    }
+}
+
+function spinColor(pos, idx) {
+    if (pos === idx) {
+        return 'black';
+    }
+    if (pos - 1 === idx || pos - 1 === idx - 8) {
+        return 'gray';
+    }
+    if (pos - 2 === idx || pos - 2 === idx - 8) {
+        return 'darkgray';
+    }
+    return 'lightgray';
+}
+
+function spinner(canvas, position) {
+    var ctx = canvas.getContext("2d"), dotRad = canvas.width / 16, circRad = canvas.width * 0.4, a, b, marg = canvas.width * 0.1;
+    if (position > 7) {
+        position = position - 8;
+    }
+    a = Math.sqrt(circRad * circRad) / 2 * 1.08; // what's this fudge factor for? My math must be bad.
+    ctx.beginPath();
+    ctx.arc(canvas.width / 2, canvas.height / 5, dotRad, 0, 2 * Math.PI, false);
+    ctx.fillStyle = spinColor(position, 0);
+    ctx.strokeStyle = 'transparent';
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(canvas.width * 4 / 5, canvas.height / 2, dotRad, 0, 2 * Math.PI, false);
+    ctx.fillStyle = spinColor(position, 2);
+    ctx.strokeStyle = 'transparent';
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(canvas.width / 2, canvas.height * 4 / 5, dotRad, 0, 2 * Math.PI, false);
+    ctx.fillStyle = spinColor(position, 4);
+    ctx.strokeStyle = 'transparent';
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(canvas.width / 5, canvas.height / 2, dotRad, 0, 2 * Math.PI, false);
+    ctx.fillStyle = spinColor(position, 6);
+    ctx.strokeStyle = 'transparent';
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(marg + circRad + a, marg + circRad - a, dotRad, 0, 2 * Math.PI, false);
+    ctx.fillStyle = spinColor(position, 1);
+    ctx.strokeStyle = 'transparent';
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(marg + circRad + a, marg + circRad + a, dotRad, 0, 2 * Math.PI, false);
+    ctx.fillStyle = spinColor(position, 3);
+    ctx.strokeStyle = 'transparent';
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(marg + circRad - a, marg + circRad + a, dotRad, 0, 2 * Math.PI, false);
+    ctx.fillStyle = spinColor(position, 5);
+    ctx.strokeStyle = 'transparent';
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(marg + circRad - a, marg + circRad - a, dotRad, 0, 2 * Math.PI, false);
+    ctx.fillStyle = spinColor(position, 7);
+    ctx.strokeStyle = 'transparent';
+    ctx.fill();
+    ctx.stroke();
+    
+    window.setTimeout(function () {spinner(canvas, position + 1); }, 100);
+}
+
+makeAllImagePlaceholders();
+//spinner(testSpin, 0);
+</script>
+<script>
+/* Instance-specific script */
+
+function pseudoAjaxRandom() {
+    var dice = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅'];
+    ajaxRand.disabled = true;
+    //ajaxRand.innerHTML = '<img src="img/spinner.gif" alt="">Rolling...';
+    ajaxRand.innerHTML = 'Rolling...';
+    die1.innerHTML = '◻';
+    die2.innerHTML = '◻';
+    window.setTimeout(function () {
+        ajaxRand.disabled = false;
+        die1.innerHTML = dice[Math.floor(Math.random() * 6)];
+        die2.innerHTML = dice[Math.floor(Math.random() * 6)];
+        ajaxRand.innerHTML = 'Roll your dice';
+    }, 1000);
+}
+function pseudoAjaxVote() {
+    ajaxVote.disabled = true;
+    //ajaxVote.innerHTML = '<img src="img/spinner.gif" alt="">Voting...';
+    ajaxVote.innerHTML = 'Voting...';
+    window.setTimeout(function () {
+        ajaxVote.innerHTML = 'Voted';
+    }, 1000);
+}
+</script>
