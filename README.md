@@ -13,7 +13,7 @@ Wireframes can be created with pencil and paper, as a digital image, or with a s
 
 There are drawbacks too.
 
-* **Learning curve**: The abililty to build UIs out of HTML takes more time to acquire than drawing with pencil and paper. I'd argue it takes less time than Photoshop, but if you've already spent the time to learn of to create digital media, that's not helpful.
+* **Learning curve**: The abililty to build UIs out of HTML takes more time to acquire than drawing with pencil and paper. I'd argue it takes less time than Photoshop, but if you've already know how to use it, that's no consolation.
 * **Misleading purpose**: It is hard to tell the difference between a wireframe designed for quick demonstration and a poorly made application.
 
 Learning HTML is a solvable problem - invest the time in learning it. The second problem is harder to find a solution to. If you show somebody a UI scrawled in crayon on a cocktail napkin, they should naturally look past the crudeness of the media and focus on the idea it is attempting to communicate. A quick HTML page looks way better, but people expect more from it and have a hard time looking past the "ugliness" of the design. I have found several effective techniques to prevent this that I will whare with you and give you a few tools to assist.
