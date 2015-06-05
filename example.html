@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=Edge">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>Wireframe - Demo</title>
+<link rel="stylesheet" href="wireframe.css">
+<style type="text/css">
+/* Instance-specific styles */
+article {margin: 0 auto; width: 720px; position: relative; }
+
+#image1 {float: right; margin: 0 1em; }
+
+#die1, #die2 {display: inline-block; width: 20px; height: 20px; font-size: 16px; font-family: monospace; border: 1px solid #333; text-align: center; }
+
+#ajaxRand {width: 10em; }
+#ajaxVote {width: 9em; }
+
+#wireframe {left: -60px; }
+#testSpin {}
+</style>
+
+<body>
+<article>
+<h1>Wireframe* Demo</h1>
+
+<div class="wire">
+<h2>Common Ajax Button Behavior</h2>
+<canvas class="placeholderImage" id="image1" width="200" height="200" title="Image placeholder"></canvas>
+<p>For repeatable ajax functionality, disable the button when clicked and change its text to make what is happening clear to the user. When the activity completes, reset the button to its original state.
+<p><button type="button" id="ajaxRand" onclick="pseudoAjaxRandom()">Roll your dice</button>
+<p>Rolled: <span id="die1">1</span> <span id="die2">1</span>
+
+<h3>Non-repeatable Actions</h3>
+<p>If it is a one-time only action, leave the button disabled and update the text to communicate a completed state.
+
+<p><button type="button" id="ajaxVote" onclick="pseudoAjaxVote()">Vote now!</button>
+</div>
+
+</article>
+
+<article id="wireframe">
+<h2>*What are Wireframes?</h2>
+<p>Wireframes are simple UI (user interface) specifications of interaction, not decoration.
+
+<h3>Browser Support</h3>
+<p>It is important to create and modify wireframes as quickly as possible to effectively participate in conversation with users and stakeholders. To accomplish this, the latest features of the best browsers may be employed.
+<p>This wireframe was built for the latest versions of <a href="http://www.mozilla.org/en-US/firefox/desktop/">Firefox</a> and <a href="https://www.google.com/intl/en-US/chrome/browser/">Chrome</a> only. No time was spent on compatibility with other browsers.
+
+<h3>More About Wireframing</h3>
+<h4>From <a href="http://www.usability.gov/sites/default/files/creating-wireframes.pdf">Usability.gov</a></h4>
+<blockquote>“A wireframe is a basic visual interface guide that suggests the structure of an 
+interface and the relationships between its pages. They serve as a blue print that 
+defines each Web page’s structure, content and functionality. Wireframes are created 
+before any design work is started so that the focus is on layout without the 
+distraction of color and visual elements.”</blockquote>
+
+<h4>From <a href="http://konigi.com/node/1819">Konigi.com</a></h4>
+<blockquote>“A wireframe is a schematic or other low-fidelity rendering of a computer interface, intended to primarily demonstrate functionality, features, content, and user flow without explicitly specifying the visual design of a product. Wireframes may function as interface specification for products such as computer applications, web and mobile sites, and all products requiring some form of human-computer interaction.”</blockquote>
+
+<img src="img/spin.gif" style="display: none; " title="Preload spinner">
+</article>
+
+<script>
+function makeImage(canvas) {
+    var ctx = canvas.getContext("2d"), centerWidth, centerHeight, maxDim;
+    centerWidth = canvas.width / 2;
+    centerHeight = canvas.height / 2;
+    maxDim = canvas.width;
+    if (canvas.height > maxDim) {
+        maxDim = canvas.height;
+    }
+
+    ctx.beginPath();
+    ctx.rect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'white';
+    ctx.fill();
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'black';
+    ctx.moveTo(0, 0);
+    ctx.lineTo(canvas.width, canvas.height);
+    ctx.moveTo(canvas.width, 0);
+    ctx.lineTo(0, canvas.height);
+
+    ctx.stroke();
+}
+
+function makeAllImagePlaceholders() {
+    var imagePlaceholders = document.querySelectorAll('canvas.placeholderImage'), ii;
+    for (ii = 0; ii < imagePlaceholders.length; ii = ii + 1) {
+        makeImage(imagePlaceholders[ii]);
+    }
+}
+
+makeAllImagePlaceholders();
+</script>
+<script>
+/* Instance-specific script */
+
+// spinner from http://preloaders.net/en/circular
+function pseudoAjaxRandom() {
+    ajaxRand.disabled = true;
+    ajaxRand.innerHTML = '<img src="img/spin.gif" alt="">Rolling...';
+    window.setTimeout(function () {
+        ajaxRand.disabled = false;
+        die1.innerHTML = Math.ceil(Math.random() * 6);
+        die2.innerHTML = Math.ceil(Math.random() * 6);
+        ajaxRand.innerHTML = 'Roll your dice';
+    }, 1000);
+}
+function pseudoAjaxVote() {
+    ajaxVote.disabled = true;
+    ajaxVote.innerHTML = '<img src="img/spin.gif" alt="">Voting...';
+    window.setTimeout(function () {
+        ajaxVote.innerHTML = 'Voted';
+    }, 2000);
+}
+ajaxVote.disabled = false;
+</script>
