@@ -1,7 +1,7 @@
 Wireframe
 =========
 
-Like a biological organism, software has a development life cycle that starts with a plan and matures in stages until it is ready to be released into its intended environment. The stages between an idea and completion determine if the end product will be a highly functional member of society or a malformed monstrosity that should never leave the laboratory.
+Like a biological organism, software has a development life cycle that starts with a plan and matures in stages until it is ready to be released into its intended environment. What happens between the idea and its completion determines if it will grow to be a highly functional member of society or a malformed monstrosity destined never to leave the laboratory.
 
 There are ways to increase the chances that your software is successful. (And ways to ensure certain doom.) One helpful but underused technique is the creation of wireframes - highly simplified diagrams that demonstrate basic functionality. A "bare bones" UI can communicate software requirements better than a pile of words to both stakeholders and developers. [Some even claim that written spec is a complete waste of time.](https://gettingreal.37signals.com/ch11_Theres_Nothing_Functional_about_a_Functional_Spec.php) Wireframes can be used during requirements gathering to make plain to stakeholders the repercussions of their requests and to uncover requirements that are missing, forgotten, or taken for granted. Usability feedback can be acquired from end users using a wireframe before significant time is spent on development. 
 
