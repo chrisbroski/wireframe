@@ -5,7 +5,7 @@ Like a biological organism, software has a development life cycle that starts wi
 
 There are ways to increase the chances that your software is successful. (And ways to ensure certain doom.) One helpful but underused technique is the creation of wireframes - highly simplified diagrams that demonstrate basic functionality. A "bare bones" UI can communicate software requirements better than a pile of words to both stakeholders and developers. [Some even claim that written spec is a complete waste of time.](https://gettingreal.37signals.com/ch11_Theres_Nothing_Functional_about_a_Functional_Spec.php) Wireframes can be used during requirements gathering to make plain to stakeholders the repercussions of their requests and to uncover requirements that are missing, forgotten, or taken for granted. Usability feedback can be acquired from end users using a wireframe before significant time is spent on development. 
 
-Wireframes can be created with pencil and paper, as a digital image, or with a specialized tool (like [Balsamiq](https://balsamiq.com/).) I prefer to use HTML for several reasons.
+Wireframes can be created with pencil and paper, as a digital image, or with a specialized tool (like [Balsamiq](https://balsamiq.com/).) I prefer to use HTML. There are several advantages to this.
 
 * **Dynamic interaction**: Wireframes in HTML demonstrate not only static layout, but interactive functionality as well.
 * **Easy sharing**: HTML was built for the web, making sharing wireframes simple and easy.
