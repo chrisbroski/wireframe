@@ -9,9 +9,11 @@ button {
     margin: 0 1px;
     font-family: "Comic Sans MS", cursive;
     border: 2px outset #666; border-radius: 4px;
-    line-height: 1.8em; 
+    line-height: 1.8em;
+    background: #ddd;
 }
 button:active {border: 2px inset #666; outline: 0 none; }
+button:disabled {border: 2px solid #ccc; }
 button img {vertical-align: middle; margin-right: 0.4em; }
 
 /* Nested wire boxes */
