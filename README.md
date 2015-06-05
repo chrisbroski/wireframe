@@ -24,4 +24,4 @@ Save all of your styling or decoration or whatever you like to call it until the
 
 ###Rule #2 - Comic Sans
 
-No other font face says "I am totally messing around here and would never seriously think this is a final product" like your friend Comic Sans.
+No other font face says "*I am totally messing around here and would never seriously think this is a final product*" like your friend Comic Sans.
