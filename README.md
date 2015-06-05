@@ -32,13 +32,13 @@ Putting boxes around everything is not very pretty stylistically, but if you are
 
 ###Tell Them What a Wireframe Is
 
-This is not subtle, but it is effective to hit the user over the head with the blunt facts. Add words that tell the user point-blank that they are looking at a wireframe and what a wireframe is.
+Though not subtle, it is effective to hit the user over the head with the blunt facts. Add words that tell the user point-blank that they are looking at a wireframe and what a wireframe is.
 
 Example
 -------
 
-I made a [basic example of a wireframe](example) to illustrate these techniques. Open it up and check it out. You should notice right away that I may have gone overboard it trying to convey the idea that it is just a scratch design. I added a background image of a coffee ring stain. It may be a little too much, but it has served me as a nice talking point about the type of feedback I am looking for.
+I made a [basic example of a wireframe](example) to illustrate these techniques. Open it up and check it out. You'll probably notice the coffee ring stain. I may have gone overboard trying to convey the idea that it is just a scratch design. It may be a little too much, but the coffee ring has served as a nice talking point about wireframes and the type of feedback they are meant to illicit.
 
-You should also take not of the "What are Wireframes?" section. This is my attempt to let the reader know what a wireframe UI is all about if I am not there to explain it. It consists of a quick definition, recommended browsers, and links for more information.
+Also noteworthy is the "What are Wireframes?" section. This is my attempt to quickly inform the reader about what a wireframe UI is. It consists of a quick definition, recommended browsers, and links for more information.
 
-I hope that this example and explanation is helpful to those that use wireframing in their development process. If you don't currently use wireframes, I hope that I have convinced you to give it a try. If you do, I think you will be surprised at how smoothly requirements gathering goes, how much clearer the specifications are to the developers and how much cleaner and usable the end product will be.
+I hope that this example and explanation is helpful to those that use wireframing in their development process. If you don't currently use wireframes, maybe I have inspired you to give it a try. If so, I think you will be surprised at how much more smoothly requirements gathering goes, how much clearer the specifications are to the developers and how much cleaner and usable the end product will be.
