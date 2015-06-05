@@ -8,7 +8,7 @@ There are ways to increase the chances that your software is successful. (And wa
 Wireframes can be created with pencil and paper, as a digital image, or with a specialized tool (like [Balsamiq](https://balsamiq.com/).) My preferences is to use HTML. It offers several advantages.
 
 * **Dynamic interaction**: Wireframes in HTML demonstrate not only static layout, but interactive functionality as well.
-* **Easy sharing**: HTML was built for the web, making sharing wireframes simple and easy.
+* **Easy sharing**: HTML was built for the web, so sharing wireframes is a natural thing to do.
 * **Reusable code**: If the final product is going to build its interface based on HTML, the wireframe can be reused as a starting point for development.
 
 There are drawbacks too.
