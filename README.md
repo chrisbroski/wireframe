@@ -13,7 +13,7 @@ Wireframes can be created with pencil and paper, as a digital image, or with a s
 
 There are drawbacks too.
 
-* **Learning curve**: The abililty to build UIs out of HTML takes more time to acquire than drawing with pencil and paper. I'd argue it takes less time than Photoshop, but if you are already a PhotoShop guru, that's no consolation.
+* **Learning curve**: The ability to build UIs out of HTML takes more time to acquire than drawing with pencil and paper. I'd argue it takes less time than PhotoShop, but if you are already a PhotoShop guru, that's no consolation.
 * **Misleading purpose**: It is hard to tell the difference between a wireframe designed for quick demonstration and a poorly made application.
 
 Learning HTML is a solvable problem - invest the time in learning it. Solutions to the second problem are less obvious. If you show somebody a UI scrawled in crayon on a cocktail napkin, they are naturally inclined to look past the crudeness and focus on the underlying idea. A quick HTML page looks much better, but people expect more from it. They can have a difficult time looking past the "ugliness" of the design. I have found several effective techniques to handle this that I am happy to share along with some tools.
@@ -34,3 +34,11 @@ Putting boxes around everything is not very pretty stylistically, but if you are
 
 This is not subtle, but it is effective to hit the user over the head with the blunt facts. Add words that tell the user point-blank that they are looking at a wireframe and what a wireframe is.
 
+Example
+-------
+
+I made a [basic example of a wireframe](example) to illustrate these techniques. Open it up and check it out. You should notice right away that I may have gone overboard it trying to convey the idea that it is just a scratch design. I added a background image of a coffee ring stain. It may be a little too much, but it has served me as a nice talking point about the type of feedback I am looking for.
+
+You should also take not of the "What are Wireframes?" section. This is my attempt to let the reader know what a wireframe UI is all about if I am not there to explain it. It consists of a quick definition, recommended browsers, and links for more information.
+
+I hope that this example and explanation is helpful to those that use wireframing in their development process. If you don't currently use wireframes, I hope that I have convinced you to give it a try. If you do, I think you will be surprised at how smoothly requirements gathering goes, how much clearer the specifications are to the developers and how much cleaner and usable the end product will be.
