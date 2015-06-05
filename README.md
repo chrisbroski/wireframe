@@ -20,7 +20,7 @@ Learning HTML is a solvable problem - invest the time in learning it. Solutions 
 
 ###No Colors
 
-Save all of your styling or decoration or whatever you like to call it until the end. Any colors (expect for standard blue hyperlinks) will signal to the viewer that you are looking for feedback on the appearance.
+Save all of your styling or decoration or whatever you like to call it until the end. Any colors (expect for standard blue hyperlinks) is a message to the viewer that you want their advice on how to make your design [pop](http://theoatmeal.com/comics/design_hell).
 
 ###Comic Sans
 
