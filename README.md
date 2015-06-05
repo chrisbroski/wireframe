@@ -18,10 +18,19 @@ There are drawbacks too.
 
 Learning HTML is a solvable problem - invest the time in learning it. Solutions to the second problem are less obvious. If you show somebody a UI scrawled in crayon on a cocktail napkin, they are naturally inclined to look past the crudeness and focus on the underlying idea. A quick HTML page looks much better, but people expect more from it. They can have a difficult time looking past the "ugliness" of the design. I have found several effective techniques to handle this that I am happy to share along with some tools.
 
-###Rule #1 - No Colors
+###No Colors
 
 Save all of your styling or decoration or whatever you like to call it until the end. Any colors (expect for standard blue hyperlinks) will signal to the viewer that you are looking for feedback on the appearance.
 
-###Rule #2 - Comic Sans
+###Comic Sans
 
 No other font face says "*I am totally messing around here and would never seriously think this is a final product*" like your friend Comic Sans.
+
+###Wires
+
+Putting boxes around everything is not very pretty stylistically, but if you are building a *wireframe* UI, you should use *wire frames*.
+
+###Tell Them What a Wireframe Is
+
+This is not subtle, but it is effective to hit the user over the head with the blunt facts. Add words that tell the user point-blank that they are looking at a wireframe and what a wireframe is.
+
