@@ -17,3 +17,11 @@ There are drawbacks too.
 * **Misleading purpose**: It is hard to tell the difference between a wireframe designed for quick demonstration and a poorly made application.
 
 Learning HTML is a solvable problem - invest the time in learning it. Solutions to the second problem are less obvious. If you show somebody a UI scrawled in crayon on a cocktail napkin, they are naturally inclined to look past the crudeness and focus on the underlying idea. A quick HTML page looks much better, but people expect more from it. They can have a difficult time looking past the "ugliness" of the design. I have found several effective techniques to handle this that I am happy to share along with some tools.
+
+###Rule #1 - No Colors
+
+Save all of your styling or decoration or whatever you like to call it until the end. Any colors (expect for standard blue hyperlinks) will signal to the viewer that you are looking for feedback on the appearance.
+
+###Rule #2 - Comic Sans
+
+No other font face says "I am totally messing around here and would never seriously think this is a final product" like your friend Comic Sans.
