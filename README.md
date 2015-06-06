@@ -20,7 +20,7 @@ Learning HTML is a solvable problem—just take the time and learn it already. S
 
 ###No Colors
 
-Save all of your styling or decoration or whatever you like to call it until the end. Any colors (expect for standard blue hyperlinks) is a message to the viewer that you want their advice on how to make your design [pop](http://theoatmeal.com/comics/design_hell).
+Save all of your styling or decoration or whatever you like to call it until the end. Color (expect for standard blue hyperlinks) is a message to the viewer that you want their advice on how to make your design [pop](http://theoatmeal.com/comics/design_hell).
 
 ###Comic Sans
 
