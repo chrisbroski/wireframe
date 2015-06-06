@@ -24,7 +24,7 @@ Save all of your styling or decoration or whatever you like to call it until the
 
 ###Comic Sans
 
-No other font face says "*I am totally messing around here and would never seriously think this is a final product*" like your friend Comic Sans. Using this font for everything should make it clear that you are not intending for the interface look cool.
+No other font face says "*I am totally messing around here and would never seriously think this is a final product*" like your friend Comic Sans. Using this font for everything should make it clear that you are not trying to make the interface look cool.
 
 ###Wires
 
