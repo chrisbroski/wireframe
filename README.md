@@ -32,7 +32,7 @@ Putting boxes around everything is not very pretty stylistically, but if you are
 
 ###Explain What a Wireframe Is
 
-Though not subtle, it is effective to hit the user over the head with the blunt facts. Include information that tells the user point-blank that they are looking at a wireframe and what a wireframe is.
+Though not subtle, it is effective to hit the user over the head with the blunt facts. Include information that tells the user point-blank that they are looking at a wireframe, what a wireframe is, and why.
 
 Example
 -------
