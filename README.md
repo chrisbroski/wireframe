@@ -1,5 +1,5 @@
-Wireframe
-=========
+Wireframes
+==========
 
 Like a biological organism, software has a development life cycle that starts with a plan and matures in stages until it is ready to be released into its intended environment. What happens between the idea and its completion determines if it will grow to be a highly functional member of society or a malformed monstrosity destined never to leave the laboratory.
 
