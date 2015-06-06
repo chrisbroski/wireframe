@@ -39,6 +39,6 @@ Example
 
 I made a [basic example of a wireframe](example) to illustrate these techniques. Open it up and check it out. You'll probably notice the coffee ring stain. I may have gone overboard trying to convey the idea that it is just a scratch design. It may be a little too much, but the coffee ring has served as a nice launching point during live demos to talk about wireframes and the type of feedback they are meant to illicit.
 
-Also noteworthy is the "What are Wireframes?" section. This is my attempt to quickly inform the reader about what a wireframe UI is. It consists of a brief definition, recommended browsers, and links for more information.
+Also noteworthy is the "What are Wireframes?" section at the bottom. This is my attempt to quickly inform the reader about what a wireframe UI is. It consists of a brief definition, recommended browsers, and links for more information.
 
 I hope that this example and explanation are helpful to those that use wireframing as part of their development process. If you don't use wireframes, maybe I have inspired you to give it a try. If so, I think you will be surprised at how much more smoothly requirements gathering goes, how much clearer feature specifications are to the developers and how much more usable the end product will be.
