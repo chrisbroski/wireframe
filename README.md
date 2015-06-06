@@ -16,7 +16,7 @@ There are drawbacks too.
 * **Learning curve**: Building UIs out of HTML takes more time to learn than drawing with pencil and paper. I'd argue it's easier to learn than PhotoShop, but if you are already a PhotoShop guru, that's no consolation.
 * **Misleading purpose**: It is hard to tell the difference between a wireframe designed for quick demonstration and a poorly made application.
 
-Learning HTML is a solvable problem—just take the time and learn it already. Solutions to the second problem are less obvious. If you show somebody a UI scrawled in crayon on a cocktail napkin, they are naturally inclined to look past the crudeness and focus on the underlying idea. A quick HTML page looks much better, but people expect more from it. They can have a difficult time looking past the "ugliness" of the design. I have found several effective techniques to handle this that I am happy to share along with some tools.
+Learning HTML is a solvable problem—just take the time and learn it already. Solutions to the second problem are less obvious. If you show somebody a UI scrawled in crayon on a cocktail napkin, they are naturally inclined to look past the crudeness and focus on the underlying idea. A quick HTML page looks much better, but people expect more from it. They can have a difficult time looking past the "ugliness" of the design. I have found several effective techniques to handle this that I am happy to share.
 
 ###No Colors
 
