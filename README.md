@@ -28,9 +28,9 @@ No other font face says "*I am totally messing around here and would never serio
 
 ###Wires
 
-Putting boxes around everything is not very pretty stylistically, but if you are building a *wireframe* UI, you should use *wire frames*.
+Putting boxes around everything is not very pretty stylistically, but if you are building a *wireframe* UI, it makes sense to use *wire frames*.
 
-###Tell Them What a Wireframe Is
+###Explain What a Wireframe Is
 
 Though not subtle, it is effective to hit the user over the head with the blunt facts. Include information that tells the user point-blank that they are looking at a wireframe and what a wireframe is.
 
