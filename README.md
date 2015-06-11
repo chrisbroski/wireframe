@@ -40,7 +40,7 @@ Though not subtle, it is effective to hit the user over the head with the blunt 
 Example
 -------
 
-I made a [basic example of a wireframe](example) ([GitHub repo](https://github.com/chrisbroski/wireframe/)) to illustrate these techniques. Open it up and check it out. You'll probably notice the coffee ring stain. I may have gone overboard trying to convey the idea that it is just a scratch design. It may be a bit much, but the coffee ring has served as a nice launching point during live demos to talk about wireframes and the type of feedback they are meant to illicit.
+I made a [basic example of a wireframe](example) ([GitHub repo](https://github.com/chrisbroski/wireframe/)) to illustrate these techniques. Open it up and check it out. You'll probably notice the coffee ring stain background image. I may have gone overboard trying to convey the idea that it is just a scratch design. Though a bit much, the coffee ring has served as a natural launching point during demos to talk about wireframes and the type of feedback they are meant to illicit.
 
 Also noteworthy is the "What are Wireframes?" section at the bottom. This is my attempt to quickly teach the reader about wireframes. It consists of a brief definition, recommended browsers, and links for more information.
 
