@@ -23,7 +23,7 @@ Be Clear That It's Just A Rough Sketch
 
 ###No Colors
 
-Save all of your styling or decoration or whatever you like to call it until the end. Color (expect for standard blue hyperlinks) is a message to the viewer that you want their advice on how to make your design [pop](http://theoatmeal.com/comics/design_hell).
+Save all of your styling or decoration or whatever you like to call it until the end. Color (expect for standard blue hyperlinks) is a message to the viewer that you would love their advice about how to make your design [pop](http://theoatmeal.com/comics/design_hell).
 
 ###Comic Sans
 
