@@ -18,8 +18,8 @@ There are drawbacks too.
 
 Learning HTML is a solvable problem—just take the time and learn it already. Solutions to the second problem are less obvious. If you show somebody a UI scrawled in crayon on a cocktail napkin, they are naturally inclined to look past the crudeness and focus on the underlying idea. A quick HTML page looks much better, but people expect more from it. They can have a difficult time looking past the "ugliness" of the design. I have discovered several solutions to this problem that I am happy to share.
 
-Being Clear That It's Just A Rough Sketch
------------------------------------------
+Be Clear That It's Just A Rough Sketch
+--------------------------------------
 
 ###No Colors
 
