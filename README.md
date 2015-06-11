@@ -9,7 +9,7 @@ Wireframes can be created with pencil and paper, as a digital image, or with a s
 
 * **Dynamic interaction**: Wireframes made with HTML can do more than show static layout. They can also demonstrate interactive functionality.
 * **Easy sharing**: HTML was built for the web, so sharing wireframes is a natural thing to do.
-* **Reusable code**: If the final product is going to build its interface based on HTML, the wireframe can be reused as a starting point for development.
+* **Reusable code**: If the final product is going to build its interface using HTML, the wireframe can be reused as a starting point for development.
 
 There are drawbacks too.
 
