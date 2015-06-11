@@ -18,12 +18,12 @@ There are drawbacks too.
 
 Learning HTML is a solvable problem—just take the time and learn it already. Solutions to the second problem are less obvious. If you show somebody a UI scrawled in crayon on a cocktail napkin, they are naturally inclined to look past the crudeness and focus on the underlying idea. A quick HTML page looks much better, but people expect more from it. They can have a difficult time looking past the "ugliness" of the design. I have discovered several solutions to this problem that I am happy to share.
 
-Be Clear That It's Just A Rough Sketch
+Be Clear That It's Just a Rough Sketch
 --------------------------------------
 
 ###No Colors
 
-Save all of your styling or decoration or whatever you like to call it until the end. Color (expect for standard blue hyperlinks) is a message to the viewer that you would love their advice about how to make your design [pop](http://theoatmeal.com/comics/design_hell).
+Save all of your styling or decoration or whatever you call it for later. Color (expect for standard blue hyperlinks) is a message to the viewer that you would love their advice about how to make your design [pop](http://theoatmeal.com/comics/design_hell).
 
 ###Comic Sans
 
